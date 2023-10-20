@@ -1,8 +1,10 @@
+import Produtos from '@/components/Produtos/Produtos'
+import React from 'react'
 
-export default function Home() {
+export default function Mamao() {
   return (
-    <div>
-      <h1 className="w-52 m-auto bg-red-500 text-center font-bold text-3xl rounded-lg ">HOME</h1>
-    </div>
+    <>
+        <Produtos prod={"Mamão"}/>
+    </>
   )
 }
