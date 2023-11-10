@@ -9,6 +9,7 @@ export default function Cabecalho() {
       <Link href="/produtos/mamao" >MAMÃO</Link>
       <Link href="/produtos/melao" >MELÃO</Link>
       <Link href="/produtos/manga" >MANGA</Link>
+      <Link href="/consumo/usuario-view">Usuarios</Link>
     </nav>
   </header>
   )

@@ -1,13 +1,13 @@
-// Exemplo básico usando React
+/* @jsxImportSource solidts */
+
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { FaEdit, FaTrash } from 'react-icons/fa'; // Importe os ícones conforme necessário
+import { FaEdit, FaTrash } from 'react-icons/fa';
 
 const UsersList = () => {
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
-    // Função assíncrona para buscar os usuários da API
     const fetchUsers = async () => {
       try {
         const response = await fetch('/api/users');
@@ -19,7 +19,7 @@ const UsersList = () => {
     };
 
     fetchUsers();
-  }, []); // Executa uma vez no carregamento
+  }, []);
 
   return (
     <div>
